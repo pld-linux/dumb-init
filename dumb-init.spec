@@ -12,8 +12,7 @@ Source0:	https://github.com/Yelp/dumb-init/archive/v%{version}/%{name}-%{version
 # Source0-md5:	8eb97a95d886a26dfc939adbce0d028c
 URL:		https://github.com/Yelp/dumb-init
 %if %{with static}
-BuildRequires:	glibc-static
-BuildRequires:	musl
+BuildRequires:	musl-devel
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
