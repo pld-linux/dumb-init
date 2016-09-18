@@ -5,7 +5,7 @@
 Summary:	A minimal init system for Linux containers
 Name:		dumb-init
 Version:	1.0.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Base
 Source0:	https://github.com/Yelp/dumb-init/archive/v%{version}/%{name}-%{version}.tar.gz
@@ -41,7 +41,7 @@ This package contains statically linked version of dumb-init.
 %if %{with static}
 %{__make} \
 	CC="musl-gcc" \
-	CFLAGS="%{rpmcflags} -std=gnu99 -Wall -Werror"
+	CFLAGS="%{rpmcflags} -std=gnu99 -Wall -Werror -static"
 mv dumb-init dumb-init-static
 %{__make} clean
 %endif
