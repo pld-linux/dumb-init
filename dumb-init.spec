@@ -5,7 +5,7 @@
 Summary:	A minimal init system for Linux containers
 Name:		dumb-init
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		Base
 Source0:	https://github.com/Yelp/dumb-init/archive/v%{version}/%{name}-%{version}.tar.gz
